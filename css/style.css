@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #5A5A5A; /* Default text color */
+    background-color: #FFF; /* Light background */
+    line-height: 1.6; /* Improve readability */
+}
+
+a {
+    text-decoration: none; /* Remove underlines */
+    color: #729C1C; /* Default link color */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+a:hover {
+    color: #7C5C37; /* Hover color */
+}
+
+/* Skip Link Styling */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.visually-hidden.focusable:focus {
+    position: static;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    background-color: #FFF;
+    color: #000;
+    padding: 10px 15px;
+    border: 2px solid #729C1C;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FDF7E6; /* Light beige background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-family: 'Georgia', serif;
+    color: #7C5C37; /* Brand text color */
+}
+
+.navbar-brand:hover {
+    color: #729C1C; /* Hover effect for the brand */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7C5C37;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #729C1C;
+    background-color: rgba(114, 156, 28, 0.1); /* Add subtle hover effect */
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #7C5C37;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'><path d='M4 7h22v2H4zm0 7h22v2H4zm0 7h22v2H4z'/></svg>");
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #FDF7E6;
+}
+
+ 
+/* Specialties Section */
+#menu img {
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer; /* Show pointer on hover */
+}
+
+#menu img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* menu buttons hover effects and transition */
+#menu a.btn {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#menu a.btn:hover {
+    background-color: #7C5C37;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+
+/* About Us Section */
+.about-section img {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-section h1,
+.about-section h2 {
+    color: #729C1C;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #FDF7E6;
+    color: #000;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #7C5C37;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #729C1C;
+    transform: scale(1.2); /* Slightly enlarges the link on hover for emphasis */
+}
