@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Skip links for accessibility (hidden by default, shown only on focus) -->
+    <a href="#main-content" class="visually-hidden focusable">Skip to main content</a>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #FDF7E6;">
+  <nav class="navbar navbar-expand-lg" style="background-color: #FDF7E6;"role="navigation">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="images/logo.png" alt="Plant Palette Logo" width="40" height="40" class="me-2">
         <span class="fw-bold">Plant Palette</span>
       </a>
@@ -26,7 +28,7 @@
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
         <!-- Search Icon -->
-          <button class="btn btn-outline-success ms-3" type="button">
+          <button class="btn btn-outline-success ms-3" type="button" aria-label="Search">
             <i class="bi bi-search"></i>
           </button>
       </div>
@@ -34,6 +36,7 @@
   </nav>
 
  <!-- About Us Section -->
+ <main id="main-content" role="main">
 <section class="py-5" style="background-color: #FDF7E6;">
     <div class="container">
       <h1 class="text-center fw-bold mb-5" style="font-family: 'Georgia', serif; font-style: italic; color:#729C1C;">OUR STORY</h1>
@@ -80,7 +83,7 @@
   </section>
   
   <!-- footer Section -->
-  <footer class="text-center py-4" style="background-color: #FDF7E6;">
+  <footer class="text-center py-4" style="background-color: #FDF7E6;" role="contentinfo">
     <div class="d-flex justify-content-center gap-3 mb-3">
       <!-- Instagram Icon -->
       <a href="#" class="text-dark">
